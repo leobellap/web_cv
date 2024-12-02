@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en" class="scroll-pt-[80px] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Alpine.js -->
+    <style>
+      [x-cloak] {
+        display: none;
+      }
+    </style>
+    <!--  -->
+    <!-- Shoelace components -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"
+    ></script>
+    <!--  -->
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=2iv5oYM6uMyF&format=png&color=000000"
+      type="image/x-icon"
+    />
+    <!--  -->
+    <!-- Styles -->
+    <!--  -->
+    <title>CV</title>
+    <script type="module" crossorigin src="/web_cv/assets/index-9YdMFw1Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/web_cv/assets/index-DMX2NgKn.css">
+  </head>
+  <body class="animate-fadein bg-gray-100 text-[16px] text-gray-700">
+    <header
+      class="sticky top-0 z-50 mx-auto max-w-[1150px] rounded-b-[20px] bg-white bg-opacity-90 shadow-sm"
+    >
+      <nav
+        class="flex items-center justify-center px-[10px] py-[8px] text-[14px] font-semibold"
+      >
+        <a
+          class="px-[10px] py-[5px] transition hover:text-orange-500"
+          href="#about"
+          >about</a
+        >
+
+        <a
+          class="px-[10px] py-[5px] transition hover:text-orange-500"
+          href="#skills"
+          >skills</a
+        >
+
+        <a
+          class="px-[10px] py-[5px] transition hover:text-orange-500"
+          href="#projects"
+          >projects</a
+        >
+
+        <a
+          class="px-[10px] py-[5px] transition hover:text-orange-500"
+          href="#education"
+          >education</a
+        >
+
+        <a
+          class="px-[10px] py-[5px] transition hover:text-orange-500"
+          href="#contacts"
+          >contacts</a
+        >
+      </nav>
+    </header>
+
+    <main class="mx-auto my-[90px] flex max-w-[1100px] flex-col gap-[120px]">
+      <section id="about" class="rounded-[20px] bg-white p-[40px] shadow-sm">
+        <div class="flex items-center justify-between">
+          <div class="flex max-w-[600px] flex-col gap-[10px]">
+            <h1 class="flex items-center gap-[10px] text-[32px] font-bold">
+              Hello! <span class="text-[18px]">&#128075;</span>
+            </h1>
+
+            <h2>
+              My name is Leonid Beloglazov. I'm a Data Scientist, with a
+              research interests in trends discovery in online discussions,
+              human-machine learning model interaction and topic modelling.
+            </h2>
+            <h2>
+              Currently I'm a student of the master's program in artificial
+              intelligence at ITMO. The main focus of our program is to enhance
+              knowledge extraction and decision making in financial systems with
+              the power of AI and Big Data.
+            </h2>
+            <h2>
+              Also, I work as a researcher and developer at the NCCR (Cognitive
+              Research) lab, where me and my team develop applications to
+              measure the correctness and understandability of Process Models.
+            </h2>
+
+            <div class="mt-[10px] flex gap-[15px] *:text-[18px]">
+              <a
+                href="https://t.me/lassfortran"
+                target="_blank"
+                class="text-blue-500 hover:text-blue-700"
+                ><sl-icon name="telegram"></sl-icon
+              ></a>
+              <a
+                href="https://github.com/leobellap"
+                target="_blank"
+                class="text-slate-600 hover:text-slate-800"
+                ><sl-icon name="github"></sl-icon
+              ></a>
+              <a
+                href="mailto:leobellap@gmail.com"
+                target="_blank"
+                class="text-orange-500 hover:text-red-500"
+                ><sl-icon name="google"></sl-icon
+              ></a>
+            </div>
+          </div>
+          <img
+            class="max-h-[300px] max-w-[500px] rounded-[20px] object-contain"
+            src="/web_cv/assets/section-image-nq7TkZwq.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="flex justify-between">
+        <!-- <img
+          src="static/images/Linked Path Group.svg"
+          alt=""
+          class="absolute left-[770px] top-[517px] -z-10"
+        /> -->
+        <h2 class="text-[32px] font-bold">Skills:</h2>
+
+        <div
+          class="grid grid-cols-5 gap-[20px] *:rounded-[15px] *:bg-white *:px-[15px] *:py-[10px] *:text-center *:text-[14px] *:font-semibold *:shadow-sm"
+        >
+          <p>Python</p>
+          <p>Pandas</p>
+          <p>Numpy</p>
+          <p>Matplotlib</p>
+          <p>Seaborn</p>
+          <p>Plotly</p>
+          <p>Jupyter</p>
+          <p>Flask</p>
+          <p>FastAPI</p>
+          <p>Scikit-learn</p>
+          <p>SQLAlchemy</p>
+          <p>SQL</p>
+          <p>PostgreSQL</p>
+          <p>MySQL</p>
+          <p>Spark</p>
+          <p>Clickhouse</p>
+          <p>Docker</p>
+          <p>Kubernetes</p>
+          <p>Github</p>
+          <p>Linux</p>
+          <p>Bash</p>
+          <p>Yandex.Cloud</p>
+          <p class="flex animate-bounce items-center gap-[5px]">
+            And more! <span class="text-[12px]">&#128522;</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="flex justify-between">
+        <div class="relative">
+          <h2 class="sticky top-[60px] text-[32px] font-bold">Projects:</h2>
+        </div>
+        <div class="flex max-w-[770px] flex-col gap-[60px]">
+          <div
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+          >
+            <div class="flex w-full items-center justify-between">
+              <h2 class="text-[18px] font-semibold">
+                1. Tool for Analyzing Political Trends on Reddit
+              </h2>
+              <sl-icon
+                name="chevron-right"
+                class="rotate-90 text-[28px] text-gray-600"
+              ></sl-icon>
+            </div>
+            <div class="w-full">
+              <div class="flex flex-col gap-[30px] *:text-left">
+                <p class="max-w-[80%]">
+                  Developed a tool to extract and analyze top and trending
+                  topics from the r/politics subreddit. This tool was used to
+                  gather data several weeks before and after the US 2024
+                  elections. By visualizing this data, it is possible to track
+                  how political discussions and priorities evolved throughout
+                  the election period.
+                </p>
+                <div class="flex max-w-[80%] flex-col gap-[10px]">
+                  <p class="text-[18px] font-semibold">Key features:</p>
+                  <ul class="list-inside list-decimal text-gray-600">
+                    <li>
+                      Developed a method to efficiently parse and structure the
+                      data for analysis.
+                    </li>
+                    <li>
+                      Saved the data as CSV files throughout the research
+                      period.
+                    </li>
+                    <li>
+                      Implemented a robust data cleaning pipeline to remove HTML
+                      tags, links, special symbols, and other noise.
+                    </li>
+                    <li>
+                      Selected an optimal embedding model to ensure accurate
+                      sentence embeddings.
+                    </li>
+                    <li>
+                      Trained model and experimented with various
+                      hyperparameters to achieve the best performance.
+                    </li>
+                    <li>
+                      Created visualizations to illustrate how topics changed
+                      and evolved during the election period.
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex flex-col gap-[10px]">
+                  <img
+                    src="/web_cv/assets/trends-1TDOu2K2.png"
+                    alt=""
+                    class="rounded-[20px]"
+                  />
+                  <p class="text-center text-[14px] text-gray-400">
+                    Dynamic topic modelling results
+                  </p>
+                </div>
+
+                <a
+                  href="https://github.com/leobellap/topic_modelling_research"
+                  target="_blank"
+                  class="flex w-fit items-center gap-[5px] font-semibold text-blue-600 hover:text-blue-800"
+                  >More on
+                  <sl-icon name="github"></sl-icon>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+          >
+            <div class="flex w-full items-center justify-between">
+              <h2 class="text-[18px] font-semibold">
+                2. Web Application for Evaluating Process Models
+              </h2>
+              <sl-icon
+                name="chevron-right"
+                class="rotate-90 text-[28px] text-gray-600"
+              ></sl-icon>
+            </div>
+            <div>
+              <div class="flex flex-col gap-[30px] *:text-left">
+                <h3 class="max-w-[80%]">
+                  Developed a comprehensive web application designed to gather
+                  and analyze human perceptions of process models. Participants
+                  provide demographic information and subsequently rate various
+                  process models, enabling in depth studies on model
+                  interpretability and ideal metrics for evaluating model
+                  complexity and understandability. The key part of this project
+                  is tracking a user's mouse movement and then saving it to a
+                  database for a further research.
+                </h3>
+
+                <div class="flex flex-col gap-[10px]">
+                  <img
+                    src="/web_cv/assets/animation-C3RSg83K.gif"
+                    alt=""
+                    class="rounded-[20px] object-contain"
+                  />
+                  <p class="text-center text-[14px] text-gray-400">
+                    Example of model rating process
+                  </p>
+                </div>
+
+                <div class="flex flex-col gap-[10px] *:max-w-[80%]">
+                  <p class="text-[18px] font-semibold">Key features:</p>
+                  <ul class="list-inside list-decimal text-gray-600">
+                    <li>
+                      Developed and designed the frontend with HTML, Tailwind
+                      CSS, JavaScript and Figma.
+                    </li>
+                    <li>
+                      Created a mouse tracking script with JavaScript to track
+                      the movement of the handle of a 2D slider.
+                    </li>
+                    <li>
+                      Implemented PostgreSQL database, created necessary tables.
+                    </li>
+                    <li>
+                      Utilized Python, SQLAlchemy and Flask for backend
+                      development.
+                    </li>
+
+                    <li>Containerized the application using Docker.</li>
+                    <li>
+                      Configured Nginx server and hosted project on
+                      Yandex.Cloud.
+                    </li>
+                    <li>
+                      Integrated Yandex.Metrica for detailed user interaction
+                      tracking.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                  <img
+                    src="/web_cv/assets/tables-BEOtHa8X.png"
+                    alt=""
+                    class="rounded-[20px] object-contain"
+                  />
+                  <p class="text-center text-[14px] text-gray-400">
+                    Database Schema
+                  </p>
+                </div>
+
+                <a
+                  href="https://github.com/leobellap/topic_modelling_research"
+                  target="_blank"
+                  class="flex w-fit items-center gap-[5px] font-semibold text-blue-600 hover:text-blue-800"
+                  >More on
+                  <sl-icon name="github"></sl-icon>
+                  GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+          >
+            <div class="flex w-full items-center justify-between">
+              <h2 class="text-[18px] font-semibold">
+                3. Implementation of Data Warehouse Using ClickHouse
+              </h2>
+              <sl-icon
+                name="chevron-right"
+                class="rotate-90 text-[28px] text-gray-600"
+              ></sl-icon>
+            </div>
+            <div>
+              <div class="flex flex-col gap-[30px] text-left">
+                <h3 class="max-w-[80%]">
+                  Developed a Data Warehouse using ClickHouse to efficiently
+                  manage and analyze large datasets of user transactions.
+                </h3>
+
+                <div class="flex flex-col gap-[10px]">
+                  <img
+                    src="/web_cv/assets/dataset_ex-BqkVv7mV.PNG"
+                    alt=""
+                    class="object-contain"
+                  />
+                  <p class="text-center text-[14px] text-gray-400">
+                    Example of a raw input data
+                  </p>
+                </div>
+
+                <div class="flex flex-col gap-[10px] *:max-w-[80%]">
+                  <p class="text-[18px] font-semibold">Key features:</p>
+                  <ul class="list-inside list-decimal text-gray-600">
+                    <li>
+                      Implemented a robust Data Warehouse using ClickHouse.
+                    </li>
+                    <li>
+                      Uploaded and managed a large dataset (12 million records)
+                      of user transactions.
+                    </li>
+                    <li>
+                      Created and implemented Materialized Views for efficient
+                      data analysis.
+                    </li>
+                    <li>
+                      Ensured data distribution and sharding across the
+                      ClickHouse cluster.
+                    </li>
+                    <li>
+                      Designed and optimized table schemas for performance.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                  <img
+                    src="/web_cv/assets/result_view-CrGcbuDg.PNG"
+                    alt=""
+                    class="object-contain"
+                  />
+                  <p class="text-center text-[14px] text-gray-400">
+                    Example of aggregated data per user
+                  </p>
+                </div>
+
+                <a
+                  href="https://drive.google.com/file/d/1-J72PndWX4eC3UwSOQ7pkEv-TFLmrdzz/view?usp=sharing"
+                  target="_blank"
+                  class="w-fit font-semibold text-blue-600 hover:text-blue-800"
+                  >In depth review
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="flex justify-between">
+        <h2 class="text-[32px] font-bold">Education:</h2>
+        <div
+          class="flex w-[770px] flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+        >
+          <div class="flex gap-[120px]">
+            <p class="font-semibold">2023 - 2025</p>
+            <div>
+              <p class="font-semibold">ITMO University</p>
+              <p>- Master's degree</p>
+              <p>- Artificial Intelligence</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="flex gap-[120px]">
+            <p class="font-semibold">2023 - 2024</p>
+            <div>
+              <p class="font-semibold">ITMO University</p>
+              <p>- Certificate</p>
+              <p>- Data Analytics</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="flex gap-[120px]">
+            <p class="font-semibold">2019 - 2021</p>
+            <div>
+              <p class="font-semibold">Nord University</p>
+              <p>- Certificate</p>
+              <p>- Economics</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="flex gap-[120px]">
+            <p class="font-semibold">2017 - 2022</p>
+            <div>
+              <p class="font-semibold">Baltic State Technical University</p>
+              <p>- Bachelor's degree</p>
+              <p>- Aerospace Engineering</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="flex justify-between">
+        <h2 class="text-[32px] font-bold">Contacts:</h2>
+        <div
+          class="flex w-[770px] flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+        >
+          <div class="flex items-center gap-[120px]">
+            <sl-icon
+              name="telegram"
+              class="text-[24px] text-blue-500 hover:text-blue-700"
+            ></sl-icon>
+
+            <a
+              href="https://t.me/lassfortran"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700"
+              >@lassfortran</a
+            >
+          </div>
+
+          <hr />
+
+          <div class="flex items-center gap-[120px]">
+            <sl-icon
+              name="google"
+              class="text-[24px] text-orange-500 hover:text-red-500"
+            ></sl-icon>
+
+            <a
+              href="mailto:leobellap@gmail.com"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700"
+              >leobellap@gmail.com</a
+            >
+          </div>
+
+          <hr />
+
+          <div class="flex items-center gap-[120px]">
+            <sl-icon
+              name="github"
+              class="text-[24px] text-slate-600 hover:text-slate-800"
+            ></sl-icon>
+            <a
+              href="https://github.com/leobellap"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700"
+              >@leobellap</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
