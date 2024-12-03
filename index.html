@@ -41,8 +41,14 @@
         class="flex items-center justify-center px-[10px] py-[8px] text-[14px] font-semibold"
       >
         <a
-          class="px-[10px] py-[5px] transition hover:text-orange-500"
+          class="px-[10px] py-[5px] transition hover:text-orange-500 max-lg:hidden"
           href="#about"
+          >about</a
+        >
+
+        <a
+          class="hidden px-[10px] py-[5px] transition hover:text-orange-500 max-lg:inline-block"
+          href="#about_sm"
           >about</a
         >
 
@@ -72,9 +78,11 @@
       </nav>
     </header>
 
-    <main class="mx-auto my-[90px] flex max-w-[1100px] flex-col gap-[120px]">
-      <section id="about" class="flex flex-col gap-[20px]">
-        <div class="flex items-center justify-between">
+    <main
+      class="mx-auto my-[90px] flex max-w-[1100px] flex-col gap-[120px] px-[20px] max-lg:my-[30px] max-lg:gap-[60px] max-lg:px-[20px]"
+    >
+      <section id="about" class="flex flex-col gap-[20px] max-lg:hidden">
+        <div class="flex items-center justify-between max-lg:flex-col">
           <div class="flex max-w-[600px] flex-col gap-[20px]">
             <h1 class="flex items-center gap-[10px] text-[32px] font-bold">
               Hello!
@@ -100,6 +108,7 @@
                 Process Models.
               </h2>
             </div>
+
             <div class="mt-[10px] flex gap-[15px] *:text-[18px]">
               <a
                 href="https://t.me/lassfortran"
@@ -130,11 +139,67 @@
         </div>
       </section>
 
-      <section id="skills" class="flex justify-between">
+      <section id="about_sm" class="hidden flex-col gap-[30px] max-lg:flex">
+        <h1 class="flex items-center gap-[10px] text-[32px] font-bold">
+          Hello!
+          <!-- <span class="text-[18px]">&#128075;</span> -->
+        </h1>
+
+        <img
+          class="max-w-dvh max-h-[calc(dvh/2)] rounded-[15px] object-contain shadow-sm max-lg:object-cover"
+          src="static/images/section-image.png"
+          alt=""
+        />
+
+        <div class="flex flex-col gap-[10px]">
+          <h2>
+            My name is Leonid Beloglazov. I'm a Data Scientist, with a research
+            interests in trends discovery in online discussions, human-machine
+            learning model interaction and topic modelling.
+          </h2>
+          <h2>
+            Currently I'm a student of the master's program in artificial
+            intelligence at ITMO. The main focus of our program is to enhance
+            knowledge extraction and decision making in financial systems with
+            the power of AI and Big Data.
+          </h2>
+          <h2>
+            Also, I work as a researcher and developer at the NCCR (Cognitive
+            Research) lab, where me and my team develop applications to measure
+            the correctness and understandability of Process Models.
+          </h2>
+        </div>
+
+        <div class="mt-[10px] flex gap-[15px] *:text-[18px]">
+          <a
+            href="https://t.me/lassfortran"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700"
+            ><sl-icon name="telegram"></sl-icon
+          ></a>
+          <a
+            href="https://github.com/leobellap"
+            target="_blank"
+            class="text-slate-600 hover:text-slate-800"
+            ><sl-icon name="github"></sl-icon
+          ></a>
+          <a
+            href="mailto:leobellap@gmail.com"
+            target="_blank"
+            class="text-orange-500 hover:text-red-500"
+            ><sl-icon name="google"></sl-icon
+          ></a>
+        </div>
+      </section>
+
+      <section
+        id="skills"
+        class="flex justify-between max-lg:flex-col max-lg:gap-[30px]"
+      >
         <h2 class="text-[32px] font-bold">Skills:</h2>
 
         <div
-          class="grid grid-cols-5 gap-[20px] *:rounded-[15px] *:bg-white *:px-[15px] *:py-[10px] *:text-center *:text-[14px] *:font-semibold *:shadow-sm"
+          class="grid grid-cols-5 gap-[20px] *:rounded-[15px] *:bg-white *:px-[15px] *:py-[10px] *:text-center *:text-[14px] *:font-semibold *:shadow-sm max-lg:grid-cols-2"
         >
           <p>Python</p>
           <p>Pandas</p>
@@ -158,19 +223,20 @@
           <p>Linux</p>
           <p>Bash</p>
           <p>Yandex.Cloud</p>
-          <p class="flex animate-bounce items-center gap-[5px]">
-            And more! <span class="text-[12px]">&#128522;</span>
-          </p>
+          <p class="animate-bounce text-center">And more! &#128522;</p>
         </div>
       </section>
 
-      <section id="projects" class="flex justify-between">
+      <section
+        id="projects"
+        class="flex justify-between max-lg:flex-col max-lg:gap-[30px]"
+      >
         <div class="relative">
           <h2 class="sticky top-[60px] text-[32px] font-bold">Projects:</h2>
         </div>
-        <div class="flex max-w-[770px] flex-col gap-[60px]">
+        <div class="flex max-w-[770px] flex-col gap-[60px] max-lg:gap-[30px]">
           <div
-            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:p-[25px]"
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-[18px] font-semibold">
@@ -183,7 +249,7 @@
             </div>
             <div class="w-full">
               <div class="flex flex-col gap-[30px] *:text-left">
-                <p class="max-w-[84%]">
+                <p class="max-w-[84%] max-lg:max-w-full">
                   Developed a tool to extract and analyze top and trending
                   topics from the r/politics subreddit. This tool was used to
                   gather data several weeks before and after the US 2024
@@ -191,7 +257,9 @@
                   how political discussions and priorities evolved throughout
                   the election period.
                 </p>
-                <div class="flex max-w-[84%] flex-col gap-[10px]">
+                <div
+                  class="flex max-w-[84%] flex-col gap-[10px] max-lg:max-w-full"
+                >
                   <p class="text-[18px] font-semibold">Key features:</p>
                   <ul class="list-inside list-decimal text-gray-600">
                     <li>
@@ -243,7 +311,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:p-[25px]"
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-[18px] font-semibold">
@@ -256,7 +324,7 @@
             </div>
             <div>
               <div class="flex flex-col gap-[30px] *:text-left">
-                <h3 class="max-w-[84%]">
+                <h3 class="max-w-[84%] max-lg:max-w-full">
                   Developed a comprehensive web application designed to gather
                   and analyze human perceptions of process models. Participants
                   provide demographic information and subsequently rate various
@@ -278,7 +346,9 @@
                   </p>
                 </div>
 
-                <div class="flex flex-col gap-[10px] *:max-w-[84%]">
+                <div
+                  class="flex flex-col gap-[10px] *:max-w-[84%] *:max-lg:max-w-full"
+                >
                   <p class="text-[18px] font-semibold">Key features:</p>
                   <ul class="list-inside list-decimal text-gray-600">
                     <li>
@@ -332,7 +402,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:p-[25px]"
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-[18px] font-semibold">
@@ -345,7 +415,7 @@
             </div>
             <div>
               <div class="flex flex-col gap-[30px] text-left">
-                <h3 class="max-w-[84%]">
+                <h3 class="max-w-[84%] max-lg:max-w-full">
                   Developed a Data Warehouse using ClickHouse to efficiently
                   manage and analyze large datasets of user transactions.
                 </h3>
@@ -361,7 +431,9 @@
                   </p>
                 </div>
 
-                <div class="flex flex-col gap-[10px] *:max-w-[84%]">
+                <div
+                  class="flex flex-col gap-[10px] *:max-w-[84%] *:max-lg:max-w-full"
+                >
                   <p class="text-[18px] font-semibold">Key features:</p>
                   <ul class="list-inside list-decimal text-gray-600">
                     <li>
@@ -408,13 +480,16 @@
         </div>
       </section>
 
-      <section id="education" class="flex justify-between">
+      <section
+        id="education"
+        class="flex justify-between max-lg:flex-col max-lg:gap-[30px]"
+      >
         <h2 class="text-[32px] font-bold">Education:</h2>
         <div
-          class="flex w-[770px] flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+          class="flex w-[770px] flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:w-full max-lg:p-[25px]"
         >
-          <div class="flex gap-[120px]">
-            <p class="font-semibold">2023 - 2025</p>
+          <div class="flex gap-[120px] max-lg:flex-col max-lg:gap-[10px]">
+            <p class="font-semibold max-lg:text-[14px]">2023 - 2025</p>
             <div>
               <p class="font-semibold">ITMO University</p>
               <p>- Master's degree</p>
@@ -424,8 +499,8 @@
 
           <hr />
 
-          <div class="flex gap-[120px]">
-            <p class="font-semibold">2023 - 2024</p>
+          <div class="flex gap-[120px] max-lg:flex-col max-lg:gap-[10px]">
+            <p class="font-semibold max-lg:text-[14px]">2023 - 2024</p>
             <div>
               <p class="font-semibold">ITMO University</p>
               <p>- Certificate</p>
@@ -435,8 +510,8 @@
 
           <hr />
 
-          <div class="flex gap-[120px]">
-            <p class="font-semibold">2019 - 2021</p>
+          <div class="flex gap-[120px] max-lg:flex-col max-lg:gap-[10px]">
+            <p class="font-semibold max-lg:text-[14px]">2019 - 2021</p>
             <div>
               <p class="font-semibold">Nord University</p>
               <p>- Certificate</p>
@@ -446,8 +521,8 @@
 
           <hr />
 
-          <div class="flex gap-[120px]">
-            <p class="font-semibold">2017 - 2022</p>
+          <div class="flex gap-[120px] max-lg:flex-col max-lg:gap-[10px]">
+            <p class="font-semibold max-lg:text-[14px]">2017 - 2022</p>
             <div>
               <p class="font-semibold">Baltic State Technical University</p>
               <p>- Bachelor's degree</p>
@@ -457,15 +532,18 @@
         </div>
       </section>
 
-      <section id="contacts" class="flex justify-between">
+      <section
+        id="contacts"
+        class="flex justify-between max-lg:flex-col max-lg:gap-[30px]"
+      >
         <h2 class="text-[32px] font-bold">Contacts:</h2>
         <div
-          class="flex w-[770px] flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm"
+          class="flex w-[770px] flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:w-full max-lg:p-[25px]"
         >
-          <div class="flex items-center gap-[120px]">
+          <div class="flex items-center gap-[120px] max-lg:gap-[30px]">
             <sl-icon
               name="telegram"
-              class="text-[24px] text-blue-500"
+              class="text-[24px] text-blue-500 max-lg:text-[20px]"
             ></sl-icon>
 
             <a
@@ -478,10 +556,10 @@
 
           <hr />
 
-          <div class="flex items-center gap-[120px]">
+          <div class="flex items-center gap-[120px] max-lg:gap-[30px]">
             <sl-icon
               name="google"
-              class="text-[24px] text-orange-500"
+              class="text-[24px] text-orange-500 max-lg:text-[20px]"
             ></sl-icon>
 
             <a
@@ -494,8 +572,11 @@
 
           <hr />
 
-          <div class="flex items-center gap-[120px]">
-            <sl-icon name="github" class="text-[24px] text-slate-600"></sl-icon>
+          <div class="flex items-center gap-[120px] max-lg:gap-[30px]">
+            <sl-icon
+              name="github"
+              class="text-[24px] text-slate-600 max-lg:text-[20px]"
+            ></sl-icon>
             <a
               href="https://github.com/leobellap"
               target="_blank"
