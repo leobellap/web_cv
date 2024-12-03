@@ -35,7 +35,7 @@
   </head>
   <body class="animate-fadein bg-gray-100 text-[16px] text-gray-700">
     <header
-      class="sticky top-0 z-50 mx-auto max-w-[1150px] rounded-b-[20px] bg-white bg-opacity-90 shadow-sm"
+      class="sticky top-0 z-50 mx-auto max-w-[1150px] rounded-b-[15px] bg-white bg-opacity-90 shadow-sm"
     >
       <nav
         class="flex items-center justify-center px-[10px] py-[8px] text-[14px] font-semibold"
@@ -73,30 +73,33 @@
     </header>
 
     <main class="mx-auto my-[90px] flex max-w-[1100px] flex-col gap-[120px]">
-      <section id="about" class="rounded-[20px] bg-white p-[40px] shadow-sm">
+      <section id="about" class="flex flex-col gap-[20px]">
         <div class="flex items-center justify-between">
-          <div class="flex max-w-[600px] flex-col gap-[10px]">
+          <div class="flex max-w-[600px] flex-col gap-[20px]">
             <h1 class="flex items-center gap-[10px] text-[32px] font-bold">
-              Hello! <span class="text-[18px]">&#128075;</span>
+              Hello!
+              <span class="text-[18px]">&#128075;</span>
             </h1>
 
-            <h2>
-              My name is Leonid Beloglazov. I'm a Data Scientist, with a
-              research interests in trends discovery in online discussions,
-              human-machine learning model interaction and topic modelling.
-            </h2>
-            <h2>
-              Currently I'm a student of the master's program in artificial
-              intelligence at ITMO. The main focus of our program is to enhance
-              knowledge extraction and decision making in financial systems with
-              the power of AI and Big Data.
-            </h2>
-            <h2>
-              Also, I work as a researcher and developer at the NCCR (Cognitive
-              Research) lab, where me and my team develop applications to
-              measure the correctness and understandability of Process Models.
-            </h2>
-
+            <div class="flex flex-col gap-[10px]">
+              <h2>
+                My name is Leonid Beloglazov. I'm a Data Scientist, with a
+                research interests in trends discovery in online discussions,
+                human-machine learning model interaction and topic modelling.
+              </h2>
+              <h2>
+                Currently I'm a student of the master's program in artificial
+                intelligence at ITMO. The main focus of our program is to
+                enhance knowledge extraction and decision making in financial
+                systems with the power of AI and Big Data.
+              </h2>
+              <h2>
+                Also, I work as a researcher and developer at the NCCR
+                (Cognitive Research) lab, where me and my team develop
+                applications to measure the correctness and understandability of
+                Process Models.
+              </h2>
+            </div>
             <div class="mt-[10px] flex gap-[15px] *:text-[18px]">
               <a
                 href="https://t.me/lassfortran"
@@ -118,8 +121,9 @@
               ></a>
             </div>
           </div>
+
           <img
-            class="max-h-[300px] max-w-[500px] rounded-[20px] object-contain"
+            class="max-h-[350px] max-w-[500px] rounded-[15px] border-[4px] border-white object-contain shadow-sm"
             src="static/images/section-image.png"
             alt=""
           />
@@ -127,11 +131,6 @@
       </section>
 
       <section id="skills" class="flex justify-between">
-        <!-- <img
-          src="static/images/Linked Path Group.svg"
-          alt=""
-          class="absolute left-[770px] top-[517px] -z-10"
-        /> -->
         <h2 class="text-[32px] font-bold">Skills:</h2>
 
         <div
@@ -177,14 +176,14 @@
               <h2 class="text-[18px] font-semibold">
                 1. Tool for Analyzing Political Trends on Reddit
               </h2>
-              <sl-icon
+              <!-- <sl-icon
                 name="chevron-right"
                 class="rotate-90 text-[28px] text-gray-600"
-              ></sl-icon>
+              ></sl-icon> -->
             </div>
             <div class="w-full">
               <div class="flex flex-col gap-[30px] *:text-left">
-                <p class="max-w-[80%]">
+                <p class="max-w-[84%]">
                   Developed a tool to extract and analyze top and trending
                   topics from the r/politics subreddit. This tool was used to
                   gather data several weeks before and after the US 2024
@@ -192,7 +191,7 @@
                   how political discussions and priorities evolved throughout
                   the election period.
                 </p>
-                <div class="flex max-w-[80%] flex-col gap-[10px]">
+                <div class="flex max-w-[84%] flex-col gap-[10px]">
                   <p class="text-[18px] font-semibold">Key features:</p>
                   <ul class="list-inside list-decimal text-gray-600">
                     <li>
@@ -250,14 +249,14 @@
               <h2 class="text-[18px] font-semibold">
                 2. Web Application for Evaluating Process Models
               </h2>
-              <sl-icon
+              <!-- <sl-icon
                 name="chevron-right"
                 class="rotate-90 text-[28px] text-gray-600"
-              ></sl-icon>
+              ></sl-icon> -->
             </div>
             <div>
               <div class="flex flex-col gap-[30px] *:text-left">
-                <h3 class="max-w-[80%]">
+                <h3 class="max-w-[84%]">
                   Developed a comprehensive web application designed to gather
                   and analyze human perceptions of process models. Participants
                   provide demographic information and subsequently rate various
@@ -279,7 +278,7 @@
                   </p>
                 </div>
 
-                <div class="flex flex-col gap-[10px] *:max-w-[80%]">
+                <div class="flex flex-col gap-[10px] *:max-w-[84%]">
                   <p class="text-[18px] font-semibold">Key features:</p>
                   <ul class="list-inside list-decimal text-gray-600">
                     <li>
@@ -339,14 +338,14 @@
               <h2 class="text-[18px] font-semibold">
                 3. Implementation of Data Warehouse Using ClickHouse
               </h2>
-              <sl-icon
+              <!-- <sl-icon
                 name="chevron-right"
                 class="rotate-90 text-[28px] text-gray-600"
-              ></sl-icon>
+              ></sl-icon> -->
             </div>
             <div>
               <div class="flex flex-col gap-[30px] text-left">
-                <h3 class="max-w-[80%]">
+                <h3 class="max-w-[84%]">
                   Developed a Data Warehouse using ClickHouse to efficiently
                   manage and analyze large datasets of user transactions.
                 </h3>
@@ -362,7 +361,7 @@
                   </p>
                 </div>
 
-                <div class="flex flex-col gap-[10px] *:max-w-[80%]">
+                <div class="flex flex-col gap-[10px] *:max-w-[84%]">
                   <p class="text-[18px] font-semibold">Key features:</p>
                   <ul class="list-inside list-decimal text-gray-600">
                     <li>
