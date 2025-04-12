@@ -31,8 +31,8 @@
     <!-- Styles -->
     <!--  -->
     <title>CV</title>
-    <script type="module" crossorigin src="/web_cv/assets/index-V8AyplOY.js"></script>
-    <link rel="stylesheet" crossorigin href="/web_cv/assets/index-b331YOsn.css">
+    <script type="module" crossorigin src="/web_cv/assets/index-DzovNJIs.js"></script>
+    <link rel="stylesheet" crossorigin href="/web_cv/assets/index-BQvdNPHd.css">
   </head>
   <body class="animate-fadein bg-gray-100 text-[16px] text-gray-700">
     <header
@@ -44,37 +44,37 @@
         <a
           class="px-[10px] py-[5px] transition hover:text-orange-500 max-lg:hidden"
           href="#about"
-          >about</a
+          >About</a
         >
 
         <a
           class="hidden px-[10px] py-[5px] transition hover:text-orange-500 max-lg:inline-block"
           href="#about_sm"
-          >about</a
+          >About</a
         >
 
         <a
           class="px-[10px] py-[5px] transition hover:text-orange-500"
           href="#skills"
-          >skills</a
+          >Skills</a
         >
 
         <a
           class="px-[10px] py-[5px] transition hover:text-orange-500"
           href="#projects"
-          >projects</a
+          >Projects</a
         >
 
         <a
           class="px-[10px] py-[5px] transition hover:text-orange-500"
           href="#education"
-          >education</a
+          >Education</a
         >
 
         <a
           class="px-[10px] py-[5px] transition hover:text-orange-500"
           href="#contacts"
-          >contacts</a
+          >Contacts</a
         >
       </nav>
     </header>
@@ -94,19 +94,31 @@
               <h2>
                 My name is Leonid Beloglazov. I'm a Data Engineer, with a
                 research interests in trend discovery in online discussions,
-                human-machine learning model interaction and topic modelling.
+                human-machine learning model interaction and
+                <a
+                  class="font-semibold text-blue-600 transition hover:text-blue-800"
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/Topic_model"
+                  >Topic Modelling</a
+                >.
               </h2>
               <h2>
-                Currently I'm a student of the master's program in artificial
-                intelligence at ITMO University. The main focus of our program
+                Currently I'm a student of the master's program in Artificial
+                Intelligence at ITMO University. The main focus of our program
                 is to enhance knowledge extraction and decision making in
-                financial systems with the power of AI and Big Data.
+                financial systems with the power of Machine Learning and Big
+                Data.
               </h2>
               <h2>
                 Also, I work as a researcher and developer at the NCCR
                 (Cognitive Research) lab, where me and my team develop
                 applications to measure the correctness and understandability of
-                Process Models.
+                <a
+                  class="font-semibold text-blue-600 transition hover:text-blue-800"
+                  href="https://en.wikipedia.org/wiki/Business_process_discovery"
+                  target="_blank"
+                  >Process Models</a
+                >.
               </h2>
             </div>
 
@@ -155,19 +167,31 @@
         <div class="flex flex-col gap-[10px]">
           <h2>
             My name is Leonid Beloglazov. I'm a Data Engineer, with a research
-            interests in trends discovery in online discussions, human-machine
-            learning model interaction and topic modelling.
+            interests in trend discovery in online discussions, human-machine
+            learning model interaction and
+            <a
+              class="font-semibold text-blue-600 transition hover:text-blue-800"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Topic_model"
+              >Topic Modelling</a
+            >.
           </h2>
           <h2>
-            Currently I'm a student of the master's program in artificial
-            intelligence at ITMO. The main focus of our program is to enhance
-            knowledge extraction and decision making in financial systems with
-            the power of AI and Big Data.
+            Currently I'm a student of the master's program in Artificial
+            Intelligence at ITMO University. The main focus of our program is to
+            enhance knowledge extraction and decision making in financial
+            systems with the power of Machine Learning and Big Data.
           </h2>
           <h2>
             Also, I work as a researcher and developer at the NCCR (Cognitive
             Research) lab, where me and my team develop applications to measure
-            the correctness and understandability of Process Models.
+            the correctness and understandability of
+            <a
+              class="font-semibold text-blue-600 transition hover:text-blue-800"
+              href="https://en.wikipedia.org/wiki/Business_process_discovery"
+              target="_blank"
+              >Process Models</a
+            >.
           </h2>
         </div>
 
@@ -241,7 +265,89 @@
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-[18px] font-semibold">
-                1. Tool for Analyzing Political Trends on Reddit
+                1. Airflow DAG for Updating Database Records and Generating
+                Reports
+              </h2>
+              <!-- <sl-icon
+                name="chevron-right"
+                class="rotate-90 text-[28px] text-gray-600"
+              ></sl-icon> -->
+            </div>
+            <div>
+              <div class="flex flex-col gap-[30px] text-left">
+                <h3 class="max-w-[84%] max-lg:max-w-full">
+                  The Economics Department monitors a set of organizations. To
+                  gather information, they use data from the LsFusion database.
+                  Therefore, it's necessary to keep the records in the database
+                  up to date. To solve this task, a DAG has been created in
+                  Apache Airflow.
+                </h3>
+
+                <div
+                  class="flex flex-col gap-[10px] *:max-w-[84%] *:max-lg:max-w-full"
+                >
+                  <p class="text-[18px] font-semibold">
+                    The steps of the DAG represent a standard ETL process:
+                  </p>
+                  <ul class="list-inside list-decimal text-gray-600">
+                    <li>
+                      A set of taxpayer identification numbers (INNs) is
+                      extracted from the LsFusion database using an SQL query.
+                    </li>
+                    <li>
+                      Using Python and the Selenium library, data is downloaded
+                      from the Unified State Register of Legal Entities (<a
+                        href="https://egrul.nalog.ru/index.html"
+                        target="_blank"
+                        class="font-semibold text-blue-600 transition hover:text-blue-800"
+                        >EGRUL</a
+                      >).
+                    </li>
+                    <li>
+                      The Pandas library is used to clean and transform the
+                      data.
+                    </li>
+                    <li>
+                      The extracted data is compared with records in the
+                      database, and differing values are updated.
+                    </li>
+                    <li>
+                      An Excel
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1ZgB9Yx9vPcBUio4ZmTmPbBVdKfwcDM6g/edit?usp=sharing&ouid=115365542265518772432&rtpof=true&sd=true"
+                        target="_blank"
+                        class="font-semibold text-blue-600 transition hover:text-blue-800"
+                        >report</a
+                      >
+                      is generated highlighting the differing values.
+                    </li>
+                    <li>
+                      A message along with the Excel report is sent to the
+                      economists' chat.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                  <img
+                    src="/web_cv/assets/airflow_dag-BgM7XDql.png"
+                    alt=""
+                    class="object-contain max-h-[360px]"
+                  />
+                  <p class="text-center text-[14px] text-gray-400">
+                    Graph representation of ETL process in Airflow
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:p-[25px]"
+          >
+            <div class="flex w-full items-center justify-between">
+              <h2 class="text-[18px] font-semibold">
+                2. Tool for Analyzing Political Trends on Reddit
               </h2>
               <!-- <sl-icon
                 name="chevron-right"
@@ -311,12 +417,13 @@
               </div>
             </div>
           </div>
+
           <div
             class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:p-[25px]"
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-[18px] font-semibold">
-                2. Web Application for Evaluating Process Models
+                3. Web Application for Evaluating Process Models
               </h2>
               <!-- <sl-icon
                 name="chevron-right"
@@ -402,12 +509,13 @@
               </div>
             </div>
           </div>
+
           <div
             class="flex flex-col gap-[30px] rounded-[20px] bg-white p-[40px] shadow-sm max-lg:p-[25px]"
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-[18px] font-semibold">
-                3. Implementation of Data Warehouse Using ClickHouse
+                4. Implementation of Data Warehouse Using ClickHouse
               </h2>
               <!-- <sl-icon
                 name="chevron-right"
@@ -588,9 +696,9 @@
         </div>
       </section>
 
-      <footer class="flex flex-col gap-[10px] mt-[120px]">
+      <footer class="flex flex-col gap-[10px] mt-[120px] max-lg:mt-[40px]">
         <hr />
-        <p class="text-gray-400 text-[14px]">
+        <p class="text-gray-400 font-semibold text-[12px]">
           Made with Vite, Alpine.js and Tailwind CSS
         </p>
       </footer>
